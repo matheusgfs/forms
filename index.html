@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calvão BarberShop</h1>
+    <h3>Agendamento</h3>
+    <hr>
+    <form action="./index.html">
+        <label for="Nome">Nome</label>
+        <input type="text" id='Nome' name='Nome' required>
+
+        <label for="Telefone">Telefone</label>
+        <input type="text" id='Telefone' name="Telefone" required>
+
+        <label for="CPF">CPF</label>
+        <input type="text" id='CPF' name='CPF' required>
+        
+        <label for="Serviço">Serviço</label>
+        <select name="Serviço" id="Serviço">
+            
+            <option value="Vazio"></option>
+            <option value="Corte de Cabelo">Corte de Cabelo - R$ 40,00</option>
+            <option value="Barba">Barba - R$ 30,00</option>
+            <option value="Combo">Corte + Barba - R$ 60,00</option>
+            <option value="Sobrancelha">Sobrancelha - R$ 20,00</option>
+            <option value="Unhas">Unhas - R$ 20,00</option>
+
+        </select>
+
+        <label for="Profissional">Profissional</label>
+        <select name="Profissional" id="Profissional">
+            <option value="Vazio"></option>
+            <option value="Profissional 1">Matheus</option>
+            <option value="Profissional 2">Erick</option>
+            <option value="Profissional 3">Vitor</option>
+            <option value="Profissional 4">João Pedro</option>
+            
+        </select>
+              
+        <label for="Horário">Horário</label>
+         <select name="Horário" id="Horário">
+            <option value="Vazio"></option>
+            <option value="Horário 1">8:00</option>
+            <option value="Horário 2">9:00</option>
+            <option value="Horário 3">10:00</option>
+            <option value="Horário 4">11:00</option>
+        </select>  
+        <button>Enviar</button>
+    </form>
+    <hr>
+    <h1>Agendamentos do dia</h1>
+
+<table>
+    <tr>
+        <th>Nome</th>
+        <th>Telefone</th>
+        <th>Serviço</th>
+        <th>Horário</th>
+        <th>Profissional</th>
+    </tr>
+    <tr>
+         <td>Jair Messias Bolsonaro</td>
+         <td>(61)99666-6666</td>
+         <td>Corte de Cabelo - R$ 40,00</td>
+         <td>8:00</td>
+        <td>Erick</td>
+    </tr>
+    
+    <tr>
+         <td>Luiz Inacio Lula da Silva</td>
+         <td>(61)99171-17117</td>
+         <td>Unhas - R$ 20,00 </td>
+         <td>9:00</td>
+        <td>Vitor</td>
+    </tr>
+
+    <tr>
+         <td>Alexandre de Morais</td>
+         <td>(61) 99999-0000</td>
+         <td>Corte + Barba - R$ 60,00</td>
+         <td>10:00</td>
+        <td>João Pedro</td>
+    </tr>
+
+
+
+</table>
+</body>
+</html>
