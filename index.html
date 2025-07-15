@@ -4,57 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
+    <link rel="stylesheet" href="estilo.css">
+    </head>
 <body>
-    <h1>Calvão BarberShop</h1>
-    <h3>Agendamento</h3>
+    <header>
+         <img src="logocalvao.jpeg" alt="Logo">
+        </header>
+<div id="conteiner">
+    <div id="cabecalho">
+        <h1>Agendamento</h1>
+    </div>
     <hr>
-    <form action="./index.html">
-        <label for="Nome">Nome</label>
-        <input type="text" id='Nome' name='Nome' required>
+    <div id="formulario">
+        <form id="forms" action="./index.html">
+            <label for="Nome">Nome</label>
+            <input type="text" id='Nome' name='Nome' required>
 
-        <label for="Telefone">Telefone</label>
-        <input type="text" id='Telefone' name="Telefone" required>
+            <label for="Telefone">Telefone</label>
+            <input type="text" id='Telefone' name="Telefone" required>
 
-        <label for="CPF">CPF</label>
-        <input type="text" id='CPF' name='CPF' required>
-        
-        <label for="Serviço">Serviço</label>
-        <select name="Serviço" id="Serviço">
+            <label for="CPF">CPF</label>
+            <input type="text" id='CPF' name='CPF' required>
             
-            <option value="Vazio"></option>
-            <option value="Corte de Cabelo">Corte de Cabelo - R$ 40,00</option>
-            <option value="Barba">Barba - R$ 30,00</option>
-            <option value="Combo">Corte + Barba - R$ 60,00</option>
-            <option value="Sobrancelha">Sobrancelha - R$ 20,00</option>
-            <option value="Unhas">Unhas - R$ 20,00</option>
+            <label for="Serviço">Serviço</label>
+            <select name="Serviço" id="Serviço">
+                
+                <option value="Vazio"></option>
+                <option value="Corte de Cabelo">Corte de Cabelo - R$ 40,00</option>
+                <option value="Barba">Barba - R$ 30,00</option>
+                <option value="Combo">Corte + Barba - R$ 60,00</option>
+                <option value="Sobrancelha">Sobrancelha - R$ 20,00</option>
+                <option value="Unhas">Unhas - R$ 20,00</option>
 
-        </select>
+            </select>
 
-        <label for="Profissional">Profissional</label>
-        <select name="Profissional" id="Profissional">
-            <option value="Vazio"></option>
-            <option value="Profissional 1">Matheus</option>
-            <option value="Profissional 2">Erick</option>
-            <option value="Profissional 3">Vitor</option>
-            <option value="Profissional 4">João Pedro</option>
-            
-        </select>
-              
-        <label for="Horário">Horário</label>
-         <select name="Horário" id="Horário">
-            <option value="Vazio"></option>
-            <option value="Horário 1">8:00</option>
-            <option value="Horário 2">9:00</option>
-            <option value="Horário 3">10:00</option>
-            <option value="Horário 4">11:00</option>
-        </select>  
-        <button>Enviar</button>
-    </form>
+            <label for="Profissional">Profissional</label>
+            <select name="Profissional" id="Profissional">
+                <option value="Vazio"></option>
+                <option value="Profissional 1">Matheus</option>
+                <option value="Profissional 2">Erick</option>
+                <option value="Profissional 3">Vitor</option>
+                <option value="Profissional 4">João Pedro</option>
+            </select>
+                
+            <label for="Horário">Horário</label>
+            <select name="Horário" id="Horário">
+                <option value="Vazio"></option>
+                <option value="Horário 1">8:00</option>
+                <option value="Horário 2">9:00</option>
+                <option value="Horário 3">10:00</option>
+                <option value="Horário 4">11:00</option>
+            </select>  
+            <button>Enviar</button>
+        </form>
+    </div> 
     <hr>
     <h1>Agendamentos do dia</h1>
 
-<table>
+<div id="Tabela">
+    <table>
     <tr>
         <th>Nome</th>
         <th>Telefone</th>
@@ -85,9 +93,8 @@
          <td>10:00</td>
         <td>João Pedro</td>
     </tr>
-
-
-
+</div>
+</div>
 </table>
 </body>
 </html>
