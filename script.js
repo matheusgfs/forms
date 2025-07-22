@@ -1,4 +1,4 @@
-const readline = require ("readline");
+/*const readline = require ("readline");
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
@@ -22,7 +22,7 @@ function perguntar(){
 }
 
 console.log("Olá! Vamos adicionar os barbeiros");
-perguntar();
+perguntar();*/
 
 
 
@@ -46,3 +46,34 @@ var obj = {
 };
 
 console.log(obj);*/
+
+const readline = require("readline");
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+const barbearia = {
+    nome: "",
+    servicos: []
+};
+
+function adicionarServico(){
+    rl.question("Nome do Serviço: ", (nomeServico) => {
+        rl.question("Preço do Serviço:", (precoStr) => {
+            const preco = parseFloat(precoStr);
+            barbearia.servicos.push({nome: nomeServico, preco});
+
+            rl.question("Deja adicionar mais um serviço? (s/n): ",(resposta) => {
+                if (resposta.toLowerCase ()==='s'){
+                    adicionarServico();
+            } else {
+                console.log("\nServiços cadastrados:");
+                console.log(barbearia);
+                rl.close();
+            }
+            })
+        })
+    })
+};
+adicionarServico();
